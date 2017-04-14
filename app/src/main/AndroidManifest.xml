@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.navigationapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ioc_main"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Activity.Before_first"
+            android:label="安行">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activity.FirstPage"
+            android:label="安行" />
+        <activity
+            android:name=".Activity.XmlTimeActivity"
+            android:label="安行" />
+        <activity
+            android:name=".Activity.HttpbeanActivity"
+            android:label="安行" />
+        <activity
+            android:name=".Activity.MymessageActivity"
+            android:label="安行" />
+        <activity
+            android:name=".Activity.RegisterActivity"
+            android:label="安行" />
+        <activity
+            android:name=".Activity.ShopActivity"
+            android:label="安行" />
+        <activity
+            android:name=".Activity.EnjoyActivity"
+            android:label="安行" />
+        <activity
+            android:name=".Activity.traffic_activity"
+            android:label="安行" />
+        <activity
+            android:name=".Activity.KipActivity"
+            android:label="安行" />
+        <activity
+            android:name=".Activity.CoinShopActivity"
+            android:label="安行" />
+        <activity
+            android:name=".Activity.ToTalkActivity"
+            android:label="安行" />
+        <activity
+            android:name=".Activity.BlogListActivity"
+            android:label="安行" />
+        <activity
+            android:name=".Activity.BigDataActivity"
+            android:label="安行" />
+        <activity android:name=".Activity.AttractionsActivity" />
+        <activity android:name=".Activity.ResultRouteActivity" />
+        <activity android:name=".Activity.SingleDetailActivity" />
+        <activity android:name=".Activity.ToplanningActivity" />
+        <activity android:name=".Activity.PlanningActivity"></activity>
+    </application>
+
+</manifest>

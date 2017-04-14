@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@mipmap/forecast_car"
+        >
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@mipmap/star_return"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right|center_vertical"
+            >
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:src="@mipmap/by_time"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/love_china"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:text="小安路线规划"
+            />
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="10dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="   城市："
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:hint="杭州"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="     人群:"
+            />
+        <com.example.navigationapp.model.RadioGroupEx
+            android:id="@+id/yy_renqun"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/yy_qingshaonian"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="青少年" />
+
+            <RadioButton
+                android:id="@+id/yy_qingnian"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="青年" />
+
+            <RadioButton
+                android:id="@+id/yy_jiating"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="家庭" />
+
+            <RadioButton
+                android:id="@+id/yy_laoren"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="老人" />
+
+            <RadioButton
+                android:id="@+id/yy_pengyoutuan"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="朋友团" />
+
+            <RadioButton
+                android:id="@+id/yy_qinglv"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="情侣" />
+        </com.example.navigationapp.model.RadioGroupEx>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="     偏好:"
+            />
+        <com.example.navigationapp.model.RadioGroupEx
+            android:id="@+id/yy_pianhao"
+            android:layout_width="match_parent"
+            android:layout_height="150dp">
+
+            <RadioButton
+                android:id="@+id/yy_yule"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="娱乐" />
+
+            <RadioButton
+                android:id="@+id/yy_anjing"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="安静" />
+
+            <RadioButton
+                android:id="@+id/yy_ziran"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="自然" />
+
+            <RadioButton
+                android:id="@+id/yy_lishi"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="历史" />
+
+            <RadioButton
+                android:id="@+id/yy_renao"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="热闹" />
+
+            <RadioButton
+                android:id="@+id/yy_ciji"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="刺激" />
+            <RadioButton
+                android:id="@+id/yy_yinbi"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="隐蔽" />
+        </com.example.navigationapp.model.RadioGroupEx>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="游玩时间:"
+            />
+        <com.example.navigationapp.model.RadioGroupEx
+            android:id="@+id/yy_shijian"
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+
+            <RadioButton
+                android:id="@+id/yy_yitian"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="一天" />
+
+            <RadioButton
+                android:id="@+id/yy_liangtian"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="两天" />
+
+            <RadioButton
+                android:id="@+id/yy_santian"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="三天" />
+            <RadioButton
+                android:id="@+id/yy_yizhou"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="一周" />
+        </com.example.navigationapp.model.RadioGroupEx>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="horizontal"
+        >
+        <Button
+            android:id="@+id/yy_chaxun"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="#ff9a14"
+            android:text="查询"
+            />
+    </LinearLayout>
+
+</LinearLayout>
